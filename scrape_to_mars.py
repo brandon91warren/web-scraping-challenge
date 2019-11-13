@@ -11,7 +11,6 @@ def mars_news(browser):
     # Visit the NASA Mars News Site
     url = "https://mars.nasa.gov/news/"
     browser.visit(url)
-
     # Get First List Item & Wait Half a Second If Not Immediately Present
     browser.is_element_present_by_css("ul.item_list li.slide", wait_time=0.5)
     
